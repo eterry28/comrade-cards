@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;    
+    margin: 0;
+    background-color: #E5EAEC;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 800px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+
+.header {
+    width: 100vw;
+    height: 40px;
+    font-size: 20px;
+    line-height: 20px;
+    color:#E5EAEC;
+    background: linear-gradient(to bottom,#383838 0%,#1c1c1c 100%);
+    top: 0;
+    left: 0;
+}
+
+.header h1{
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0;
+}
+
+.hero {
+    width: 100vw;
+    background-color: #1E7CA1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 40px;
+    left: 0;
+}
+
+.hero h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #E5EAEC;
+}
+
+.browse{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.browse ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+}
+
+.browse ul li {
+    margin: 0 3px;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 340px;
+    margin: 15px;
+    float: left;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.card-header, .card-body, .card-footer {
+    padding: 20px 28px;
+}
+
+.card-header a{
+    font-size: 18px;
+    color:#1c1c1c;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.5s;
+}
+
+.card img {
+    width: 300px;
+    height: 160px;
+}
+
+.card-body a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    padding: 4px 5px;
+    background: #1E7CA1;
+    color: #ffffff;
+    border-radius: 2px;
+}
+
+.card-footer a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    padding: 4px 5px;
+    color: #1E7CA1;
+}
+
+.card-quote {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+    position: absolute;
+    width: 80%;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-author {
+    font-size: 11px;
+    font-weight: normal;
+    color: #ffffff;
+    position: absolute;
+    margin-top:10px;
+    padding: 5px;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:#723336;
+}
